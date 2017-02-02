@@ -1,8 +1,8 @@
 <?php
 /*
-Plugin Name: myPlugin
-Plugin URI: https://github.com/vasbka/myPlugin
-Description: My plugin.
+Plugin Name: NYTimes
+Plugin URI: https://github.com/vasbka/NYTimes
+Description: News from NYTimes.
 Version: 1.0
 Author: vasiliygoncarenko
 License: A "Slug" license name e.g. GPL2
