@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c4337821-0264-412c-9fc6-f0ade5042222" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/myPlugin.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myPlugin.php" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="myPlugin.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -166,12 +163,12 @@
       <option name="presentableId" value="Default" />
       <updated>1485989428613</updated>
       <workItem from="1485989430226" duration="7594000" />
-      <workItem from="1485997121431" duration="129000" />
+      <workItem from="1485997121431" duration="421000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7723000" />
+    <option name="totallyTimeSpent" value="8015000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1296" height="1000" extended-state="7" />
