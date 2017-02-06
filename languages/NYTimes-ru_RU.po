@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: NYTimes\n"
 "Report-Msgid-Bugs-To: Translator Name <translations@example.com>\n"
-"POT-Creation-Date: 2017-02-06 14:09+0200\n"
+"POT-Creation-Date: 2017-02-07 00:17+0200\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: Your Team <translations@example.com>\n"
@@ -25,7 +25,5 @@ msgstr ""
 "X-Generator: Poedit 1.8.11\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: includes/example/NYTimesExampleAction.php:29
-#: step-by-step-development-plugin/includes/example/StepByStepExampleAction.php:29
-msgid "Hello"
-msgstr "Привет"
+#~ msgid "Hello"
+#~ msgstr "Привет"

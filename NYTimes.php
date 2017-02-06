@@ -17,27 +17,26 @@ require_once plugin_dir_path(__FILE__).'/includes/NYTimes.php';
 
 register_activation_hook( __FILE__, array('NYTimes' ,  'activation' ) );
 register_deactivation_hook( __FILE__, array('NYTimes' ,  'deactivation' ) );
-error_log(NYTIMES_PlUGIN_DIR_LOCALIZATION);die;
+
 function NYTimesFunc($attr)
 {
     $response = wp_remote_get( 'https://api.nytimes.com/svc/mostpopular/v2/mostemailed/'.$attr['cat'].'/1.json?api-key=938fae85fed74306994ef2d016a9d9a1');
     $rez = json_decode($response['body'],true)['results'];
-    /*?><pre><?echo print_r($rez[0]);?></pre><?*/
     if( array_key_exists(0, $rez)):?>
         <p id="NYTimesTitle">
-<!--            --><?php //echo __($rez[0]['title'],NYTIMES_PlUGIN_TEXTDOMAIN)?>
+            <?php do_action('plugin_title');echo ' : '.$rez[0]['title']?>
         </p>
         <?php if( array_key_exists(2,$rez[0]['media'][0]['media-metadata']) ):?>
             <img src="<?php echo $rez[0]['media'][0]['media-metadata'][2]['url']?>">
         <? endif;?>
         <p id="NYTimesSource">
-            <?php echo 'Source : '.$rez[0]['source']?>
+            <?php do_action('plugin_source');echo ' : '.$rez[0]['source']?>
         </p>
         <p id="NYTimesPublishDate">
-            <?php echo 'Published date : '.$rez[0]['published_date']?>
+            <?php do_action('plugin_date');echo ' : '.$rez[0]['published_date']?>
         </p>
         <p id="NYTimesAbstract">
-            <?php echo $rez[0]['abstract']?>
+            <?php do_action('plugin_short');echo " : ".$rez[0]['abstract']?>
         </p>
         <a href="<?echo $rez[0]['url']?>" id="NYTimesReadMore"> Read more. . . </a>
 <?php

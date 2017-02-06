@@ -3,13 +3,13 @@
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: NYTimes\n"
+"Project-Id-Version: WordPress Blank Pot v1.0.0\n"
 "Report-Msgid-Bugs-To: Translator Name <translations@example.com>\n"
-"POT-Creation-Date: 2017-02-07 01:08+0200\n"
+"POT-Creation-Date: 2017-02-07 01:39+0200\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: Your Team <translations@example.com>\n"
-"Language: en_US\n"
+"Language: en_GB\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -34,8 +34,12 @@ msgstr "Source"
 
 #: includes/example/NYTimesExampleAction.php:22
 msgid "Дата публикации"
-msgstr "date of publication"
+msgstr "Date of published"
 
 #: includes/example/NYTimesExampleAction.php:25
 msgid "Ни одной записи по данной категории не найдено!"
-msgstr "No entries in this category is not found!"
+msgstr "Not found"
+
+#: includes/example/NYTimesExampleAction.php:28
+msgid "Краткое описание."
+msgstr "Short text"

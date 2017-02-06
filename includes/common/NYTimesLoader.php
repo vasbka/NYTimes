@@ -57,6 +57,6 @@ class NYTimesLoader
      */
     public function all(){
         NYTimesLocalization::getInstance();
-        $a = NYTimesExampleAction::newInstance();
+        NYTimesExampleAction::newInstance();
     }
 }
