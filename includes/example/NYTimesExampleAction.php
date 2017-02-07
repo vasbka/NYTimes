@@ -25,7 +25,7 @@ class NYTimesExampleAction
             echo __('Ни одной записи по данной категории не найдено!',NYTIMES_PlUGIN_TEXTDOMAIN);
         });
         add_action('plugin_short',function(){
-            echo __('Краткое описание.',NYTIMES_PlUGIN_TEXTDOMAIN);
+            echo __('Краткое описание',NYTIMES_PlUGIN_TEXTDOMAIN);
         });
 
     }

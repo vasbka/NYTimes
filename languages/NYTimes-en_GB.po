@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WordPress Blank Pot v1.0.0\n"
 "Report-Msgid-Bugs-To: Translator Name <translations@example.com>\n"
-"POT-Creation-Date: 2017-02-07 01:39+0200\n"
+"POT-Creation-Date: 2017-02-07 02:06+0200\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: Your Team <translations@example.com>\n"
@@ -41,5 +41,8 @@ msgid "Ни одной записи по данной категории не н
 msgstr "Not found"
 
 #: includes/example/NYTimesExampleAction.php:28
-msgid "Краткое описание."
+msgid "Краткое описание"
 msgstr "Short text"
+
+#~ msgid "Краткое описание."
+#~ msgstr "Short text"
