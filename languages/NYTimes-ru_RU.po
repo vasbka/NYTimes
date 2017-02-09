@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: NYTimes\n"
 "Report-Msgid-Bugs-To: Translator Name <translations@example.com>\n"
-"POT-Creation-Date: 2017-02-07 00:17+0200\n"
+"POT-Creation-Date: 2017-02-09 05:23+0200\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: Your Team <translations@example.com>\n"
@@ -24,6 +24,293 @@ msgstr ""
 "X-Poedit-Basepath: ..\n"
 "X-Generator: Poedit 1.8.11\n"
 "X-Poedit-SearchPath-0: .\n"
+
+#: includes/Views/admin/MenuView.php:10
+#: includes/Views/admin/SubCommentsMenuView.php:10
+#: includes/Views/admin/SubDashboardMenuView.php:15
+#: includes/Views/admin/SubManagementMenuView.php:10
+#: includes/Views/admin/SubMediaMenuView.php:10
+#: includes/Views/admin/SubMenuView.php:10
+#: includes/Views/admin/SubOptionsMenuView.php:10
+#: includes/Views/admin/SubPagesMenuView.php:10
+#: includes/Views/admin/SubPluginsMenuView.php:10
+#: includes/Views/admin/SubPostsMenuView.php:10
+#: includes/Views/admin/SubThemeMenuView.php:10
+#: includes/Views/admin/SubUsersMenuView.php:10
+msgid "Go to Main Menu"
+msgstr "Перейти к главному меню"
+
+#: includes/Views/admin/MenuView.php:11
+#: includes/Views/admin/SubCommentsMenuView.php:11
+#: includes/Views/admin/SubDashboardMenuView.php:16
+#: includes/Views/admin/SubManagementMenuView.php:11
+#: includes/Views/admin/SubMediaMenuView.php:11
+#: includes/Views/admin/SubMenuView.php:11
+#: includes/Views/admin/SubOptionsMenuView.php:11
+#: includes/Views/admin/SubPagesMenuView.php:11
+#: includes/Views/admin/SubPluginsMenuView.php:11
+#: includes/Views/admin/SubPostsMenuView.php:11
+#: includes/Views/admin/SubThemeMenuView.php:11
+#: includes/Views/admin/SubUsersMenuView.php:11
+msgid "Go to Sub Menu in Posts"
+msgstr "Перейти в подменю в разделе Записи"
+
+#: includes/Views/admin/MenuView.php:12
+#: includes/Views/admin/SubCommentsMenuView.php:12
+#: includes/Views/admin/SubDashboardMenuView.php:17
+#: includes/Views/admin/SubManagementMenuView.php:12
+#: includes/Views/admin/SubMediaMenuView.php:12
+#: includes/Views/admin/SubMenuView.php:12
+#: includes/Views/admin/SubOptionsMenuView.php:12
+#: includes/Views/admin/SubPagesMenuView.php:12
+#: includes/Views/admin/SubPluginsMenuView.php:12
+#: includes/Views/admin/SubPostsMenuView.php:12
+#: includes/Views/admin/SubThemeMenuView.php:12
+#: includes/Views/admin/SubUsersMenuView.php:12
+msgid "Go to Sub Menu in Upload"
+msgstr "Перейти в подменю в разделе Медиа"
+
+#: includes/Views/admin/MenuView.php:13
+#: includes/Views/admin/SubCommentsMenuView.php:13
+#: includes/Views/admin/SubDashboardMenuView.php:18
+#: includes/Views/admin/SubManagementMenuView.php:13
+#: includes/Views/admin/SubMediaMenuView.php:13
+#: includes/Views/admin/SubMenuView.php:13
+#: includes/Views/admin/SubOptionsMenuView.php:13
+#: includes/Views/admin/SubPagesMenuView.php:13
+#: includes/Views/admin/SubPluginsMenuView.php:13
+#: includes/Views/admin/SubPostsMenuView.php:13
+#: includes/Views/admin/SubThemeMenuView.php:13
+#: includes/Views/admin/SubUsersMenuView.php:13
+msgid "Go to Sub Menu in Pages"
+msgstr "Перейти в подменю в разделе Страницы"
+
+#: includes/Views/admin/MenuView.php:14
+#: includes/Views/admin/SubCommentsMenuView.php:14
+#: includes/Views/admin/SubDashboardMenuView.php:19
+#: includes/Views/admin/SubManagementMenuView.php:14
+#: includes/Views/admin/SubMediaMenuView.php:14
+#: includes/Views/admin/SubMenuView.php:14
+#: includes/Views/admin/SubOptionsMenuView.php:14
+#: includes/Views/admin/SubPagesMenuView.php:14
+#: includes/Views/admin/SubPluginsMenuView.php:14
+#: includes/Views/admin/SubPostsMenuView.php:14
+#: includes/Views/admin/SubThemeMenuView.php:14
+#: includes/Views/admin/SubUsersMenuView.php:14
+msgid "Go to Sub Menu in Comments"
+msgstr "Перейти в подменю в разделе Комментарии"
+
+#: includes/Views/admin/MenuView.php:15
+#: includes/Views/admin/SubCommentsMenuView.php:15
+#: includes/Views/admin/SubDashboardMenuView.php:20
+#: includes/Views/admin/SubManagementMenuView.php:15
+#: includes/Views/admin/SubMediaMenuView.php:15
+#: includes/Views/admin/SubMenuView.php:15
+#: includes/Views/admin/SubOptionsMenuView.php:15
+#: includes/Views/admin/SubPagesMenuView.php:15
+#: includes/Views/admin/SubPluginsMenuView.php:15
+#: includes/Views/admin/SubPostsMenuView.php:15
+#: includes/Views/admin/SubThemeMenuView.php:15
+#: includes/Views/admin/SubUsersMenuView.php:15
+msgid "Go to Sub Menu in Themes"
+msgstr "Перейти в подменю в разделе Внешний вид"
+
+#: includes/Views/admin/MenuView.php:16
+#: includes/Views/admin/SubCommentsMenuView.php:16
+#: includes/Views/admin/SubDashboardMenuView.php:21
+#: includes/Views/admin/SubManagementMenuView.php:16
+#: includes/Views/admin/SubMediaMenuView.php:16
+#: includes/Views/admin/SubMenuView.php:16
+#: includes/Views/admin/SubOptionsMenuView.php:16
+#: includes/Views/admin/SubPagesMenuView.php:16
+#: includes/Views/admin/SubPluginsMenuView.php:16
+#: includes/Views/admin/SubPostsMenuView.php:16
+#: includes/Views/admin/SubThemeMenuView.php:16
+#: includes/Views/admin/SubUsersMenuView.php:16
+msgid "Go to Sub Menu in Plugins"
+msgstr "Перейти в подменю в разделе Плагины"
+
+#: includes/Views/admin/MenuView.php:17
+#: includes/Views/admin/SubCommentsMenuView.php:17
+#: includes/Views/admin/SubDashboardMenuView.php:22
+#: includes/Views/admin/SubManagementMenuView.php:17
+#: includes/Views/admin/SubMediaMenuView.php:17
+#: includes/Views/admin/SubMenuView.php:17
+#: includes/Views/admin/SubOptionsMenuView.php:17
+#: includes/Views/admin/SubPagesMenuView.php:17
+#: includes/Views/admin/SubPluginsMenuView.php:17
+#: includes/Views/admin/SubPostsMenuView.php:17
+#: includes/Views/admin/SubThemeMenuView.php:17
+#: includes/Views/admin/SubUsersMenuView.php:17
+msgid "Go to Sub Menu in Users"
+msgstr "Перейти в подменю в разделе Пользователи"
+
+#: includes/Views/admin/MenuView.php:18
+#: includes/Views/admin/SubCommentsMenuView.php:18
+#: includes/Views/admin/SubDashboardMenuView.php:23
+#: includes/Views/admin/SubManagementMenuView.php:18
+#: includes/Views/admin/SubMediaMenuView.php:18
+#: includes/Views/admin/SubMenuView.php:18
+#: includes/Views/admin/SubOptionsMenuView.php:18
+#: includes/Views/admin/SubPagesMenuView.php:18
+#: includes/Views/admin/SubPluginsMenuView.php:18
+#: includes/Views/admin/SubPostsMenuView.php:18
+#: includes/Views/admin/SubThemeMenuView.php:18
+#: includes/Views/admin/SubUsersMenuView.php:18
+msgid "Go to Sub Menu in Tools"
+msgstr "Перейти в подменю в разделе Инструменты"
+
+#: includes/Views/admin/MenuView.php:19
+#: includes/Views/admin/SubCommentsMenuView.php:19
+#: includes/Views/admin/SubDashboardMenuView.php:24
+#: includes/Views/admin/SubManagementMenuView.php:19
+#: includes/Views/admin/SubMediaMenuView.php:19
+#: includes/Views/admin/SubMenuView.php:19
+#: includes/Views/admin/SubOptionsMenuView.php:19
+#: includes/Views/admin/SubPagesMenuView.php:19
+#: includes/Views/admin/SubPluginsMenuView.php:19
+#: includes/Views/admin/SubPostsMenuView.php:19
+#: includes/Views/admin/SubThemeMenuView.php:19
+#: includes/Views/admin/SubUsersMenuView.php:19
+msgid "Go to Sub Menu in Options"
+msgstr "Перейти в подменю в разделе Настройки"
+
+#: includes/Views/admin/MenuView.php:22
+msgid "Click me"
+msgstr "Нажми меня"
+
+#: includes/Views/admin/MenuView.php:23
+msgid "Button with AJAX"
+msgstr "Кнопка с AJAX"
+
+#: includes/common/NYTimesLocalization.php:19
+msgid "Заголовок"
+msgstr "Title"
+
+#: includes/common/NYTimesLocalization.php:23
+msgid "Источник"
+msgstr "Source"
+
+#: includes/common/NYTimesLocalization.php:27
+msgid "Дата публикации"
+msgstr "Data publish"
+
+#: includes/common/NYTimesLocalization.php:31
+msgid "Ни одной записи по данной категории не найдено!"
+msgstr "not found posts in this category"
+
+#: includes/common/NYTimesLocalization.php:35
+msgid "Краткое описание"
+msgstr "short text"
+
+#: includes/controllers/admin/menu/MainMenu/NYTimesAdminSubMenuController.php:15
+#: includes/controllers/admin/menu/MainMenu/NYTimesAdminSubMenuController.php:20
+msgctxt "admin menu page"
+msgid "Sub New York Times"
+msgstr "Под меню New York Times"
+
+#: includes/controllers/admin/menu/MainMenu/NYTimesAdminSubMenuController.php:32
+msgid "Hello world sub menu"
+msgstr "Привет мир в под меню"
+
+#: includes/controllers/admin/menu/MainMenu/NYTimesMainAdminMenuController.php:20
+#: includes/controllers/admin/menu/MainMenu/NYTimesMainAdminMenuController.php:25
+msgid "New York Times"
+msgstr ""
+
+#: includes/controllers/admin/menu/MainMenu/NYTimesMainAdminMenuController.php:38
+msgid "Welcome to Main Menu!"
+msgstr "Добро пожаловать в главное меню!"
+
+#: includes/controllers/admin/menu/SubMenu/NYTimesCommentsMenuController.php:19
+#: includes/controllers/admin/menu/SubMenu/NYTimesCommentsMenuController.php:20
+msgid "Sub comments New York Times news"
+msgstr "Подменю New York Times новости в комменатриях"
+
+#: includes/controllers/admin/menu/SubMenu/NYTimesCommentsMenuController.php:30
+msgid "Hello this page comments"
+msgstr "Привет на странице комментариев"
+
+#: includes/controllers/admin/menu/SubMenu/NYTimesDashboardMenuController.php:13
+#: includes/controllers/admin/menu/SubMenu/NYTimesDashboardMenuController.php:14
+msgid "Sub dashboard New York Times news"
+msgstr "Подменю New York Times новостей в консоле"
+
+#: includes/controllers/admin/menu/SubMenu/NYTimesDashboardMenuController.php:23
+msgid "Hello this page dashboards"
+msgstr "Привет, это страница в консоле"
+
+#: includes/controllers/admin/menu/SubMenu/NYTimesManagementMenuController.php:19
+#: includes/controllers/admin/menu/SubMenu/NYTimesManagementMenuController.php:20
+msgid "Sub Management New York Times news"
+msgstr "Под меню New York Times новостей в настройках"
+
+#: includes/controllers/admin/menu/SubMenu/NYTimesManagementMenuController.php:29
+msgid "Hello this page Management"
+msgstr "Привет это страница управление"
+
+#: includes/controllers/admin/menu/SubMenu/NYTimesMediaMenuController.php:19
+#: includes/controllers/admin/menu/SubMenu/NYTimesMediaMenuController.php:20
+msgid "Sub pages New York Times news"
+msgstr "Под страница New York Times новостей"
+
+#: includes/controllers/admin/menu/SubMenu/NYTimesMediaMenuController.php:30
+msgid "Hello this page media"
+msgstr "Привет, это страница медиафайлов"
+
+#: includes/controllers/admin/menu/SubMenu/NYTimesOptionsMenuController.php:19
+#: includes/controllers/admin/menu/SubMenu/NYTimesOptionsMenuController.php:20
+msgid "Sub options New York Times news"
+msgstr "Под меню New York Times новостей в инструментах"
+
+#: includes/controllers/admin/menu/SubMenu/NYTimesOptionsMenuController.php:30
+msgid "Hello this page options"
+msgstr "Привет, это страница настроек"
+
+#: includes/controllers/admin/menu/SubMenu/NYTimesPagesMenuController.php:19
+#: includes/controllers/admin/menu/SubMenu/NYTimesPagesMenuController.php:20
+msgid "Sub media New York Times news"
+msgstr "Под меню New York Times новостей в разделе медиафайлов"
+
+#: includes/controllers/admin/menu/SubMenu/NYTimesPagesMenuController.php:30
+msgid "Hello this page pages"
+msgstr "Привет эта страница в разделе страницы"
+
+#: includes/controllers/admin/menu/SubMenu/NYTimesPluginMenuController.php:19
+#: includes/controllers/admin/menu/SubMenu/NYTimesPluginMenuController.php:20
+msgid "Sub plugins New York Times news"
+msgstr "Под меню New York Times новостей в разделе плагинов"
+
+#: includes/controllers/admin/menu/SubMenu/NYTimesPluginMenuController.php:30
+msgid "Hello this page plugins"
+msgstr "Привет, это страница плагинов"
+
+#: includes/controllers/admin/menu/SubMenu/NYTimesPostsMenuController.php:19
+#: includes/controllers/admin/menu/SubMenu/NYTimesPostsMenuController.php:20
+msgid "Sub posts New York Times"
+msgstr "Под меню New York Times  новостей в записях"
+
+#: includes/controllers/admin/menu/SubMenu/NYTimesPostsMenuController.php:29
+msgid "Hello this page posts"
+msgstr "Привет это страница записей"
+
+#: includes/controllers/admin/menu/SubMenu/NYTimesThemeMenuController.php:19
+#: includes/controllers/admin/menu/SubMenu/NYTimesThemeMenuController.php:20
+msgid "Sub theme New York Times news"
+msgstr "Под меню New York Times новостей в разделе внешний вид"
+
+#: includes/controllers/admin/menu/SubMenu/NYTimesThemeMenuController.php:30
+msgid "Hello this page theme"
+msgstr "Привет, это страница внешнего вида"
+
+#: includes/controllers/admin/menu/SubMenu/NYTimesUsersMenuController.php:19
+#: includes/controllers/admin/menu/SubMenu/NYTimesUsersMenuController.php:20
+msgid "Sub users New York Times news"
+msgstr "Под меню New York Times  новостей в раздеел пользователь"
+
+#: includes/controllers/admin/menu/SubMenu/NYTimesUsersMenuController.php:30
+msgid "Hello this page users"
+msgstr "Привет, это страница пользователя"
 
 #~ msgid "Hello"
 #~ msgstr "Привет"
