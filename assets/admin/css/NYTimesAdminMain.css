@@ -1,0 +1,11 @@
+#alert{
+    margin:15px;
+    width:15%;
+    min-height:50px;
+    border-radius:10%;
+    background-color: #228fdc;
+    color:#fff;
+}
+#alert:hover{
+    background-color:#305787;
+}

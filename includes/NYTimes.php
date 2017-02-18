@@ -1,9 +1,11 @@
 <?php
 
+use includes\common\NYTimesLoader;
+
 class NYTimes{
     private static $instance = null;
     protected function __construct(){
-
+        NYTimesLoader::getInstance();
     }
     public static function getInstance(){
         if( null == self::$instance){
