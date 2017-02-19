@@ -10,7 +10,7 @@ class NYTimesLastNewsShortCodeModel
     public function __construct()
     {
     }
-    public function getData($category, $period)
+    public function getData( $category, $period )
     {
         $cacheKey = "";
         $data = array();
@@ -22,11 +22,12 @@ class NYTimesLastNewsShortCodeModel
             $data = $requestAPI->getLastNews($category,$period);
             set_transient($cacheKey,$data,100);
         }
+
         return $data;
     }
     public function getCacheKey($category,$period)
     {
-        return NYTIMES_PlUGIN_TEXTDOMAIN."_nytimes_last_news_{$category}_period_{$period}";
+        return NYTIMES_PLUGIN_TEXTDOMAIN."_nytimes_last_news_{$category}_period_{$period}";
     }
     public static function newInstance()
     {

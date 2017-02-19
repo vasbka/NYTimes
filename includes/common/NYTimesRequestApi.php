@@ -15,17 +15,10 @@ class NYTimesRequestApi
         }
         return self::$instance;
     }
-    public function getLastNews( $category, $period )
+    public function getLastNews( $category, $period)
     {
-        if($category == false || empty($category))
-            $category = '/Arts';
-        else
-            $category = '/' . $category;
-        if($period == false || empty($period))
-            $period = '/7'; // last week
-        else
-            $period = '/' . $period;
-        
+        $category = '/' . $category;
+        $period = '/' . $period;
         $requestURL = self::NYTIMES_API.$category.$period.'.json?api-key='.self::NYTIMES_TOKEN;
         return $this->requestAPI($requestURL);
 

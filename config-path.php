@@ -13,6 +13,9 @@ define("NYTIMES_PLUGIN_SLUG", preg_replace( '/[^\da-zA-Z]/i', '_',  basename(NYT
 define("NYTIMES_PLUGIN_TEXTDOMAIN", str_replace( '_', '-', NYTIMES_PLUGIN_SLUG ));
 define("NYTIMES_PLUGIN_OPTION_VERSION", NYTIMES_PLUGIN_SLUG.'_version');
 define("NYTIMES_PLUGIN_OPTION_NAME", NYTIMES_PLUGIN_SLUG.'_options');
+define("NYTIMES_PLUGIN_OPTION_COUNTER",NYTIMES_PLUGIN_SLUG.'_counter');
+define("NYTIMES_PLUGIN_OPTION_CATEGORY",NYTIMES_PLUGIN_SLUG.'_category');
+define("NYTIMES_PLUGIN_OPTION_PERIOD",NYTIMES_PLUGIN_SLUG.'_period');
 define("NYTIMES_PLUGIN_AJAX_URL", admin_url('admin-ajax.php'));
 
 if ( ! function_exists( 'get_plugins' ) ) {

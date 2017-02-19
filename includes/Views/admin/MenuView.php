@@ -19,7 +19,12 @@
                 <li><a href="options-general.php?page=nytimes_control_sub_options_menu"><?php _e('Go to Sub Menu in Options')?></a></li>
             </ul>
         </div>
-        <button id="alert"><?php _e('Click me')?>!</button>
-        <button id="AJAX""><?php _e('Button with AJAX')?>!</button>
+        <form action="options.php" method="POST">
+            <?php
+                settings_fields( 'NYTimesMainSettings' );     // скрытые защитные поля
+                do_settings_sections( 'nytimes-development-plugin' ); // секции с настройками (опциями). У нас она всего одна 'section_id'
+                submit_button();
+            ?>
+        </form>
     </body>
 </html>

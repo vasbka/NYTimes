@@ -11,11 +11,19 @@ namespace Includes\Controllers\Admin\Menu\MainMenu;
 
 use includes\common\NYTimesRequestApi;
 use includes\controllers\admin\menu\NYTimesAdminBaseMenuController;
+use includes\models\admin\NYTimesMainAdminMenuModel;
 
 class NYTimesMainAdminMenuController
     extends NYTimesAdminBaseMenuController
 {
+    public $model;
     public static $MENU = true;
+    public function __construct()
+    {
+        parent::__construct();
+        $this->model = NYTimesMainAdminMenuModel::newInstance();
+    }
+
     public function action()
     {
         $plugionPage = add_menu_page(
