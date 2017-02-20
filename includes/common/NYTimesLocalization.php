@@ -16,6 +16,7 @@ class NYTimesLocalization
         add_action('plugins_loaded', array(&$this, 'localization'));
 
         add_action('plugin_title',function(){
+<<<<<<< HEAD
             echo __('Заголовок',NYTIMES_PLUGIN_TEXTDOMAIN);
         },100);
 
@@ -33,6 +34,25 @@ class NYTimesLocalization
 
         add_action('plugin_short',function(){
             echo __('Краткое описание',NYTIMES_PLUGIN_TEXTDOMAIN);
+=======
+            echo __('Заголовок',NYTIMES_PlUGIN_TEXTDOMAIN);
+        },100);
+
+        add_action('plugin_source',function(){
+            echo __('Источник',NYTIMES_PlUGIN_TEXTDOMAIN);
+        });
+
+        add_action('plugin_date',function(){
+            echo __('Дата публикации',NYTIMES_PlUGIN_TEXTDOMAIN);
+        });
+
+        add_action('plugin_not_found',function(){
+            echo __('Ни одной записи по данной категории не найдено!',NYTIMES_PlUGIN_TEXTDOMAIN);
+        });
+
+        add_action('plugin_short',function(){
+            echo __('Краткое описание',NYTIMES_PlUGIN_TEXTDOMAIN);
+>>>>>>> e8afda74497fbfce08de8132b6cc90558001df3c
         });
     }
     public static function getInstance() {
@@ -53,6 +73,10 @@ class NYTimesLocalization
          *                    Этот аргумент следует использовать вместо $abs_rel_path.
          *                   (константа STEPBYSTEP_PlUGIN_DIR_LOCALIZATION заданая в файле config-path.php)
          */
+<<<<<<< HEAD
         load_plugin_textdomain(NYTIMES_PLUGIN_TEXTDOMAIN, false, NYTIMES_PLUGIN_DIR_LOCALIZATION);
+=======
+        load_plugin_textdomain(NYTIMES_PlUGIN_TEXTDOMAIN, false, NYTIMES_PlUGIN_DIR_LOCALIZATION);
+>>>>>>> e8afda74497fbfce08de8132b6cc90558001df3c
     }
 }
