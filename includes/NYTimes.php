@@ -1,6 +1,9 @@
 <?php
 
+namespace includes;
+
 use includes\common\NYTimesLoader;
+use includes\models\admin\NYTimesGuestBookModel;
 
 class NYTimes{
     private static $instance = null;
@@ -15,7 +18,9 @@ class NYTimes{
         return self::$instance;
     }
     static public function activation(){
-        error_log('plugin activation');
+        NYTimesGuestBookModel::createTable();
+        error_log('plugin_activate');
+
     }
     static public function deactivation(){
         error_log('plugin deactivation');
@@ -43,7 +48,7 @@ class NYTimes{
         }
         if( ! get_option(NYTIMES_PLUGIN_OPTION_PERIOD))
         {
-            update_option(NYTIMES_PLUGIN_OPTION_PERIOD,"Arts");
+            update_option(NYTIMES_PLUGIN_OPTION_PERIOD,"7");
         }
     }
 }

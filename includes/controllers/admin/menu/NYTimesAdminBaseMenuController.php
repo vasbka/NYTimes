@@ -12,6 +12,7 @@ abstract class NYTimesAdminBaseMenuController
     abstract public function render();
     protected function loadView($view, $type = 0, $data = array())
     {
+
         if(file_exists($view))
         {
             switch($type)

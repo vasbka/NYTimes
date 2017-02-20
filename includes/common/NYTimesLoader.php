@@ -9,15 +9,18 @@
 namespace includes\common;
 
 //MainMenu
+use includes\controllers\admin\menu\MainMenu\NYTimesAdminGuestBookController;
 use includes\controllers\admin\menu\MainMenu\NYTimesAdminSubMenuController;
-
+//use includes\controllers\admin\menu\MainMenu\NYTimesGuestBookController;
 use includes\controllers\admin\menu\MainMenu\NYTimesMainAdminMenuController;
 //End MainMenu
 
 //Sub Menu
 
+use includes\controllers\site\NYTimesSiteGuestBookController;
 use includes\controllers\admin\menu\SubMenu\NYTimesCommentsMenuController;
 use includes\controllers\admin\menu\SubMenu\NYTimesDashboardMenuController;
+
 use includes\controllers\admin\menu\SubMenu\NYTimesManagementMenuController;
 use includes\controllers\admin\menu\SubMenu\NYTimesMediaMenuController;
 use includes\controllers\admin\menu\SubMenu\NYTimesOptionsMenuController;
@@ -29,6 +32,7 @@ use includes\controllers\admin\menu\SubMenu\NYTimesUsersMenuController;
 //End Sub Menu
 
 use includes\controllers\site\NYTimesLastNewsController;
+use includes\models\admin\NYTimesGuestBookModel;
 
 
 class NYTimesLoader
@@ -41,7 +45,7 @@ class NYTimesLoader
         // другая страница админки).
         // Проверяем в админке мы или нет
         if ( is_admin() ) {
-
+            
             // Когда в админке вызываем метод admin()
             $this->admin();
         } else {
@@ -77,6 +81,10 @@ class NYTimesLoader
         NYTimesUsersMenuController::newInstance();
         NYTimesManagementMenuController::newInstance();
         NYTimesOptionsMenuController::newInstance();
+
+        //work with db
+        NYTimesAdminGuestBookController::newInstance();
+
     }
 
     /**
@@ -84,6 +92,7 @@ class NYTimesLoader
      */
     public function site(){
         NYTimesLastNewsController::newInstance();
+        NYTimesSiteGuestBookController::newInstance();
     }
 
     /**
