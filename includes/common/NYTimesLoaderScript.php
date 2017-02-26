@@ -26,6 +26,7 @@ class NYTimesLoaderScript
     public function loadScriptAdmin($hook)
     {
         wp_register_script(
+<<<<<<< HEAD
             NYTIMES_PLUGIN_SLUG.'-AdminMain',
             NYTIMES_PLUGIN_URL.'assets/admin/js/NYTimesAdminMain.js',
             array(
@@ -42,6 +43,24 @@ class NYTimesLoaderScript
         );
         wp_enqueue_style(NYTIMES_PLUGIN_SLUG.'-AdminMainCss');
         wp_enqueue_script(NYTIMES_PLUGIN_SLUG.'-AdminMain');
+=======
+            NYTIMES_PlUGIN_SLUG.'-AdminMain',
+            NYTIMES_PlUGIN_URL.'assets/admin/js/NYTimesAdminMain.js',
+            array(
+                'jquery'
+            ),
+            NYTIMES_PlUGIN_VERSION,
+            true
+        );
+        wp_register_style(
+            NYTIMES_PlUGIN_SLUG.'-AdminMainCss',
+            NYTIMES_PlUGIN_URL.'assets/admin/css/NYTimesAdminMain.css',
+            array(),
+            NYTIMES_PlUGIN_VERSION
+        );
+        wp_enqueue_style(NYTIMES_PlUGIN_SLUG.'-AdminMainCss');
+        wp_enqueue_script(NYTIMES_PlUGIN_SLUG.'-AdminMain');
+>>>>>>> e8afda74497fbfce08de8132b6cc90558001df3c
         wp_enqueue_script('jquery');
 
     }
@@ -51,7 +70,11 @@ class NYTimesLoaderScript
         ?>
         <script type="text/javascript">
                 var NYTimesUrl;
+<<<<<<< HEAD
                 NYTimesUrl  = '<?php echo NYTIMES_PLUGIN_URL; ?>';
+=======
+                NYTimesUrl  = '<?php echo NYTIMES_PlUGIN_URL; ?>';
+>>>>>>> e8afda74497fbfce08de8132b6cc90558001df3c
         </script>
         <?php
         //end example var php to js

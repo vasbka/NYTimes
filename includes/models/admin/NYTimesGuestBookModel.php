@@ -37,6 +37,7 @@ class NYTimesGuestBookModel
         return $id;
     }
 
+<<<<<<< HEAD
     public static function getById( $id )
     {
         global $wpdb;
@@ -44,6 +45,8 @@ class NYTimesGuestBookModel
         if( count( $data ) > 0 ) return $data;
         return false;
     }
+=======
+>>>>>>> d9eec25e1752111bd5b7644b602140994fa8d522
 
     public static function updateById( $data, $id )
     {
@@ -51,6 +54,7 @@ class NYTimesGuestBookModel
         $id = $wpdb->update( self::getTableName(), $data, array( 'id'=>$id) );
     }
 
+<<<<<<< HEAD
     public static function deleteById( $id )
     {
         global $wpdb;
@@ -62,6 +66,8 @@ class NYTimesGuestBookModel
         global $wpdb;
         $wpdb->query("DROP TABLES IF EXISTS " . self::getTableName());
     }
+=======
+>>>>>>> d9eec25e1752111bd5b7644b602140994fa8d522
 
     public static function getAll()
     {
