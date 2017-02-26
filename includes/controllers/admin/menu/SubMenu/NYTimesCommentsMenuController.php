@@ -16,13 +16,8 @@ class NYTimesCommentsMenuController
     public function action()
     {
         $pluginPage = add_comments_page(
-<<<<<<< HEAD
             __('Sub comments New York Times news',NYTIMES_PLUGIN_TEXTDOMAIN),
             __('Sub comments New York Times news',NYTIMES_PLUGIN_TEXTDOMAIN),
-=======
-            __('Sub comments New York Times news',NYTIMES_PlUGIN_TEXTDOMAIN),
-            __('Sub comments New York Times news',NYTIMES_PlUGIN_TEXTDOMAIN),
->>>>>>> e8afda74497fbfce08de8132b6cc90558001df3c
             'read',
             'nytimes_control_sub_comments_menu',
             array($this,'render')
@@ -32,13 +27,8 @@ class NYTimesCommentsMenuController
     public function render()
     {
 
-<<<<<<< HEAD
         $param = __("Hello this page comments",NYTIMES_PLUGIN_TEXTDOMAIN);
         require_once NYTIMES_PLUGIN_DIR . 'includes/Views/admin/SubCommentsMenuView.php';
-=======
-        $param = __("Hello this page comments",NYTIMES_PlUGIN_TEXTDOMAIN);
-        require_once NYTIMES_PlUGIN_DIR . 'includes/Views/Admin/SubCommentsMenuView.php';
->>>>>>> e8afda74497fbfce08de8132b6cc90558001df3c
     }
     public static function newInstance()
     {

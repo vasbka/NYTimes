@@ -19,7 +19,6 @@
                 <li><a href="options-general.php?page=nytimes_control_sub_options_menu"><?php _e('Go to Sub Menu in Options')?></a></li>
             </ul>
         </div>
-<<<<<<< HEAD
         <form action="options.php" method="POST">
             <?php
                 settings_fields( 'NYTimesMainSettings' );     // скрытые защитные поля
@@ -27,9 +26,5 @@
                 submit_button();
             ?>
         </form>
-=======
-        <button id="alert"><?php _e('Click me')?>!</button>
-        <button id="AJAX""><?php _e('Button with AJAX')?>!</button>
->>>>>>> e8afda74497fbfce08de8132b6cc90558001df3c
     </body>
 </html>

@@ -10,7 +10,6 @@ abstract class NYTimesAdminBaseMenuController
     }
     abstract public function action();
     abstract public function render();
-<<<<<<< HEAD
     protected function loadView($view, $type = 0, $data = array())
     {
 
@@ -32,6 +31,4 @@ abstract class NYTimesAdminBaseMenuController
             wp_die(sprintf(__('(View %s not found)', NYTIMES_PLUGIN_TEXTDOMAIN),$view));
         }
     }
-=======
->>>>>>> e8afda74497fbfce08de8132b6cc90558001df3c
 }

@@ -1,29 +1,15 @@
 <?php
 
-<<<<<<< HEAD
 namespace includes;
 
 use includes\common\NYTimesLoader;
 use includes\models\admin\NYTimesGuestBookModel;
-=======
-<<<<<<< HEAD
-namespace includes;
-
-use includes\common\NYTimesLoader;
-use includes\models\admin\NYTimesGuestBookModel;
-=======
-use includes\common\NYTimesLoader;
->>>>>>> e8afda74497fbfce08de8132b6cc90558001df3c
->>>>>>> d9eec25e1752111bd5b7644b602140994fa8d522
 
 class NYTimes{
     private static $instance = null;
     protected function __construct(){
         NYTimesLoader::getInstance();
-<<<<<<< HEAD
         add_action('plugins_loaded',array($this,'setDefaultOptions'));
-=======
->>>>>>> e8afda74497fbfce08de8132b6cc90558001df3c
     }
     public static function getInstance(){
         if( null == self::$instance){
