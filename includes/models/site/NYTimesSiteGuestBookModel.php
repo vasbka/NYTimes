@@ -37,32 +37,6 @@ class NYTimesSiteGuestBookModel
         return $id;
     }
 
-    public static function getById( $id )
-    {
-        global $wpdb;
-        $data = $wpdb->get_row("SELECT * FROM " . self::getTableName() . " WHERE id = " . $id,ARRAY_A);
-        if( count( $data ) > 0 ) return $data;
-        return false;
-    }
-
-    public static function updateById( $data, $id )
-    {
-        global $wpdb;
-        $id = $wpdb->update( self::getTableName(), $data, array( 'id'=>$id) );
-    }
-
-    public static function deleteById( $id )
-    {
-        global $wpdb;
-        $wpdb->query("DELETE FROM " . self::getTableName() . ' WHERE id = "' . $id . '"');
-    }
-
-    public static function deleteTable()
-    {
-        global $wpdb;
-        $wpdb->query("DROP TABLES IF EXISTS " . self::getTableName());
-    }
-
     public static function getAll()
     {
         if( self::getTableName() == false ) return false;
