@@ -5,7 +5,7 @@ namespace includes\controllers\site\widget;
 
 use includes\controllers\site\NYTimesShortCodesController;
 
-class NYTimesGUestBookShortCodesController
+class NYTimesGuestBookShortCodesController
     extends NYTimesShortCodesController
 {
 

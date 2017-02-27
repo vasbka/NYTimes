@@ -86,9 +86,6 @@ class NYTimesWidget extends \WP_Widget
                         <td>
                             <?php echo date('d-m-Y H:i', $value['date_add']); ?>
                         </td>
-
-
-
                     </tr>
                 <?php endforeach ?>
             <?php }else{ ?>

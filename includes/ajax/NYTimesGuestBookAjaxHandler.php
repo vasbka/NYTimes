@@ -2,14 +2,14 @@
 
 namespace includes\ajax;
 
-use includes\controllers\admin\menu\MainMenu\NYTimesAdminGuestBookController;
+
 use includes\models\admin\NYTimesGuestBookModel;
 
 class NYTimesGuestBookAjaxHandler
 {
     public function __construct()
     {
-        if( defined( 'DOING_AJAX' ) && DOING_AJAX )
+        if( wp_doing_ajax() )
         {
             add_action( 'wp_ajax_guest_book', array( $this, 'ajaxHandler' ) );
             add_action( 'wp_ajax_nopriv_guest_book', array( $this, 'ajaxHandler' ) );
@@ -29,7 +29,6 @@ class NYTimesGuestBookAjaxHandler
                 'message' => 'Сохранено',
                 'ID' => $id
             );
-
             wp_send_json_success( $return );
         }
 

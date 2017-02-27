@@ -95,12 +95,13 @@ class NYTimesLoader
     public function site(){
         NYTimesLastNewsController::newInstance();
         NYTimesSiteGuestBookController::newInstance();
-        widget\NYTimesGUestBookShortCodesController::newInstance();
+        widget\NYTimesGuestBookShortCodesController::newInstance();
     }
 
     public function all(){
         NYTimesLocalization::getInstance();
         NYTimesLoaderScript::getInstance();
         NYTimesGuestBookAjaxHandler::newInstance();
+
     }
 }

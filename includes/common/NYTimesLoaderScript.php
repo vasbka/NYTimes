@@ -45,14 +45,13 @@ class NYTimesLoaderScript
         wp_enqueue_script('jquery');
 
         //widget
-        $version = null;
         wp_register_script(
             NYTIMES_PLUGIN_SLUG . '-Main',
             NYTIMES_PLUGIN_URL . 'assets/site/js/NYTimesMain.js',
             array(
-                'query'
+                'jquery'
             ),
-            $version,
+            NYTIMES_PLUGIN_VERSION,
             true
         );
         wp_enqueue_script( NYTIMES_PLUGIN_SLUG . '-Main' );

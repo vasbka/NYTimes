@@ -14,15 +14,12 @@ class NYTimesGuestBookDashboardWidget
         remove_meta_box( 'dashboard_quick_press', 'dashboard', 'side' );
     }
     public function addDashboardWidgets(){
-        add_meta_box(
-            'nytimes_guest_book_dashboard_widget_new',
-            __('Guest book', NYTIMES_PLUGIN_TEXTDOMAIN),
-            array( $this, 'renderDashboardWidget' ),
-            'dashboard',
-            'side',
-            'high'
-        );
-
+        
+        wp_add_dashboard_widget(
+            'nytimes_guest_book_dashboard_widget',
+            __('Guest book', NYTIMES_PLUGIN_TEXTDOMAIN),           // Заголовок виджета.
+            array( $this, 'renderDashboardWidget'  ) // Функция отображения.
+      );
         global $wp_meta_boxes;
         $normal_dashboard = $wp_meta_boxes['dashboard']['normal']['core'];
         $example_widget_backup = array('nytimes_guest_book_dashboard_widget' => $normal_dashboard['nytimes_guest_book_dashboard_widget']);
