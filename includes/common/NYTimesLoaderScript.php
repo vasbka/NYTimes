@@ -44,6 +44,22 @@ class NYTimesLoaderScript
         wp_enqueue_script(NYTIMES_PLUGIN_SLUG.'-AdminMain');
         wp_enqueue_script('jquery');
 
+        //widget
+        $version = null;
+        wp_register_script(
+            NYTIMES_PLUGIN_SLUG . '-Main',
+            NYTIMES_PLUGIN_URL . 'assets/site/js/NYTimesMain.js',
+            array(
+                'query'
+            ),
+            $version,
+            true
+        );
+        wp_enqueue_script( NYTIMES_PLUGIN_SLUG . '-Main' );
+        $data = 'var ajaxurl = "' . NYTIMES_PLUGIN_AJAX_URL . '";';
+
+        wp_add_inline_script( NYTIMES_PLUGIN_SLUG . '-Main', $data, 'before' );
+
     }
     public function loadHeadScriptAdmin()
     {

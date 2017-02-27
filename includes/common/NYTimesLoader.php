@@ -9,13 +9,14 @@
 namespace includes\common;
 
 //MainMenu
+use includes\controllers\admin\menu\MainMenu\NYTimesAdminGuestBookController;
 use includes\controllers\admin\menu\MainMenu\NYTimesAdminSubMenuController;
-
 use includes\controllers\admin\menu\MainMenu\NYTimesMainAdminMenuController;
 //End MainMenu
 
 //Sub Menu
 
+use includes\controllers\site\NYTimesSiteGuestBookController;
 use includes\controllers\admin\menu\SubMenu\NYTimesCommentsMenuController;
 use includes\controllers\admin\menu\SubMenu\NYTimesDashboardMenuController;
 use includes\controllers\admin\menu\SubMenu\NYTimesManagementMenuController;
@@ -29,6 +30,11 @@ use includes\controllers\admin\menu\SubMenu\NYTimesUsersMenuController;
 //End Sub Menu
 
 use includes\controllers\site\NYTimesLastNewsController;
+//widget
+use includes\ajax\NYTimesGuestBookAjaxHandler;
+use includes\controllers\site\widget;
+use includes\widgets;
+use includes\widgets\NYTimesGuestBookDashboardWidget;
 
 
 class NYTimesLoader
@@ -41,7 +47,7 @@ class NYTimesLoader
         // другая страница админки).
         // Проверяем в админке мы или нет
         if ( is_admin() ) {
-
+            
             // Когда в админке вызываем метод admin()
             $this->admin();
         } else {
@@ -77,20 +83,24 @@ class NYTimesLoader
         NYTimesUsersMenuController::newInstance();
         NYTimesManagementMenuController::newInstance();
         NYTimesOptionsMenuController::newInstance();
+
+        //work with db
+        NYTimesAdminGuestBookController::newInstance();
+
+        //ajax widget
+        NYTimesGuestBookDashboardWidget::newInstance();
+
     }
 
-    /**
-     * Метод будет срабатывать когда вы находитесь Сайте. Загрузка классов для Сайта
-     */
     public function site(){
         NYTimesLastNewsController::newInstance();
+        NYTimesSiteGuestBookController::newInstance();
+        widget\NYTimesGUestBookShortCodesController::newInstance();
     }
 
-    /**
-     * Метод будет срабатывать везде. Загрузка классов для Админ панеле и Сайта
-     */
     public function all(){
         NYTimesLocalization::getInstance();
         NYTimesLoaderScript::getInstance();
+        NYTimesGuestBookAjaxHandler::newInstance();
     }
 }
