@@ -4,12 +4,14 @@ namespace includes;
 
 use includes\common\NYTimesLoader;
 use includes\models\admin\NYTimesGuestBookModel;
+use includes\custom_post_type;
 
 class NYTimes{
     private static $instance = null;
     protected function __construct(){
         NYTimesLoader::getInstance();
         add_action('plugins_loaded',array($this,'setDefaultOptions'));
+        new custom_post_type\NewsPostType();
     }
     public static function getInstance(){
         if( null == self::$instance){
