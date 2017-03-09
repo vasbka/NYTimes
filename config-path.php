@@ -28,4 +28,3 @@ define("NYTIMES_PLUGIN_NAME", $TPOPlUGINs['Name']);
 
 define("NYTIMES_PLUGIN_DIR_LOCALIZATION", dirname( plugin_basename( __FILE__ ) ) . '/languages/');
 
-

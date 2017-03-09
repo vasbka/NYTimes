@@ -46,7 +46,8 @@ class NYTimesLastNewsController
                             <?php do_action('plugin_title');
                             echo ' : ' . $rez[$i]->title ?>
                         </p>
-                        <?php if (array_key_exists('url', $rez[$i]->media[0]->{'media-metadata'}[2])): ?>
+
+                        <?php if(!empty($rez[$i]->media[0])): ?>
                             <img src="<?php echo $rez[$i]->media[0]->{'media-metadata'}[2]->url ?>">
                         <? endif; ?>
                         <p id="NYTimesSource">

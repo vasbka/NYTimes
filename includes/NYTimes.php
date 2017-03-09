@@ -22,7 +22,6 @@ class NYTimes{
     static public function activation(){
         NYTimesGuestBookModel::createTable();
         error_log('plugin_activate');
-
     }
     static public function deactivation(){
         error_log('plugin deactivation');
